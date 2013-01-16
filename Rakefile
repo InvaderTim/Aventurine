@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Azurite::Application.load_tasks
+Aventurine::Application.load_tasks
