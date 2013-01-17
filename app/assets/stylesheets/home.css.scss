@@ -14,7 +14,7 @@ body {
   font-size: 14px;
   color: #62dbac;
 }
-html, body {height: 100%;
+html, body {height: 100%;}
 * html #container {height: 100%;}
 #container {
   text-align: left;
@@ -25,8 +25,11 @@ html, body {height: 100%;
   padding-bottom: 30px;
   overflow:hidden;
 }
+  input:focus {
+    outline: none;
+  }
 
-}
+
 .textfield{
   color:#313131;
   font-family:"Anonymous Pro Regular";
@@ -40,7 +43,6 @@ html, body {height: 100%;
   border-radius: 5px;
   text-indent: 10px;
   display: block;
-
 }
 
 .submitbutton {
@@ -95,8 +97,14 @@ html, body {height: 100%;
      color: #8625d0;
      padding-bottom: 10px;
    }
-
-
+}
+::selection {
+  background: #8625d0; /* Safari */
+  color: #62dbac;
+}
+::-moz-selection {
+  background: #8625d0; /* Firefox */
+  color: #62dbac;
 }
 #clear {
   clear: left;
