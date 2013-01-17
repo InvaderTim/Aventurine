@@ -1,0 +1,12 @@
+<div id="crystalList" class="resultsList">
+  <% if crystals.empty? %>
+    <div class="noResults">Your search did not return any results, please try altering your criteria.</div>
+  <% else %>
+    <% crystals.each do |crystal| %>
+      <div class="display">
+        <span id="name"><%= crystal.name %></span>
+      </div>
+    <% end %>
+  <% end %>
+</div>
+
