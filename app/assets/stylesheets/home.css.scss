@@ -1,4 +1,45 @@
-// Place all the styles related to the home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+@font-face {
+  font-family: "Anonymous Pro Regular";
+  src: url("/assets/Anonymous Pro.ttf");
+}
 
+img, body, html, *{
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #313131;
+  text-align: center;
+  font-family:"Anonymous Pro Regular";
+  font-size: 14px;
+  color: #62dbac;
+}
+html, body {height: 100%;
+* html #container {height: 100%;}
+#container {
+  text-align: left;
+  min-height:100%;
+  height: auto !important;
+  width:950px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  overflow:hidden;
+}
+
+}
+#logo {
+  margin-top: 100px;
+  background-image:url("/assets/logo.png") ;
+  width: 206px;
+  height: 120px;
+
+}
+#login {
+
+}
+#signup {
+
+}
+#blurb {
+
+}
