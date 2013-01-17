@@ -58,5 +58,8 @@ module Aventurine
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    # Stop devise from running DB while Heroku is compiling mah asses (assets)
+    config.assets.initialize_on_precompile = false
   end
 end
