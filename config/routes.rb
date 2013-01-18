@@ -52,6 +52,7 @@ Aventurine::Application.routes.draw do
   # just remember to delete public/index.html.
   root :to => 'home#index'
   
+	resources :welcome
   resources :crystals
 
   # See how all your routes lay out with "rake routes"
