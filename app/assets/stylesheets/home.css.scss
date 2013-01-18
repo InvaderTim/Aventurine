@@ -2,7 +2,10 @@
   font-family: "Anonymous Pro Regular";
   src: url("/assets/Anonymous Pro.ttf");
 }
-
+@font-face {
+  font-family: "Anonymous Pro Bold";
+  src: url("/assets/Anonymous Pro B.ttf");
+}
 img, body, html, *{
   padding: 0;
   margin: 0;
@@ -16,6 +19,20 @@ body {
 }
 html, body {height: 100%;}
 * html #container {height: 100%;}
+a, a:link, a:active, a:visited {
+  color: #ffa676;
+  text-decoration: none;
+
+}
+a:hover {
+  color: #e0b7ff;
+  text-decoration: none;
+
+}
+b, strong { font-family: "Anonymous Pro Bold";}
+s, strike { color: #ef0808;}
+u { border-bottom: dashed 1px;}
+
 #container {
   text-align: left;
   min-height:100%;
@@ -92,7 +109,7 @@ html, body {height: 100%;}
   padding-left:20px ;
   border-left: 10px solid #8625d0;
    .title {
-     font-family: "Anonymous Pro Regular";
+     font-family: "Anonymous Pro Bold";
      font-size: 20px;
      color: #8625d0;
      padding-bottom: 10px;
@@ -105,6 +122,17 @@ html, body {height: 100%;}
 ::-moz-selection {
   background: #8625d0; /* Firefox */
   color: #62dbac;
+}
+::-webkit-input-placeholder {
+  color: #116c62;
+}
+
+:-moz-placeholder {
+  color: #116c62;
+}
+
+:-ms-input-placeholder {
+  color: #116c62;
 }
 #clear {
   clear: left;
